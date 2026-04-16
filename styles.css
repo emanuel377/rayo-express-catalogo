@@ -130,6 +130,36 @@ button{
   margin-top:14px;
 }
 
+.trust-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+
+.trust-card{
+  padding:14px;
+  border-radius:22px;
+  border:1px solid var(--line);
+  background:rgba(3,13,28,.84);
+  box-shadow:var(--shadow);
+}
+
+.trust-card span{
+  display:block;
+  color:var(--gold-soft);
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.trust-card strong{
+  display:block;
+  margin-top:8px;
+  font-family:"Montserrat",sans-serif;
+  font-size:1rem;
+  line-height:1.25;
+}
+
 .section-nav{
   position:sticky;
   top:10px;
@@ -327,6 +357,13 @@ button{
   line-height:1.35;
 }
 
+.section-note{
+  margin:8px 0 0;
+  color:rgba(255,255,255,.7);
+  font-size:.92rem;
+  line-height:1.5;
+}
+
 .tab-view{
   display:block;
 }
@@ -418,6 +455,7 @@ button{
   background:
     linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02)),
     rgba(5,20,40,.96);
+  border:1px solid rgba(255,255,255,.07);
 }
 
 .product-card.compact .product-media{
@@ -448,6 +486,23 @@ button{
     linear-gradient(180deg,#fbfcfe,#e4ebf5);
 }
 
+.product-media::before{
+  content:"";
+  position:absolute;
+  width:138px;
+  height:138px;
+  border-radius:50%;
+  background:rgba(255,255,255,.72);
+  border:2px solid rgba(201,176,55,.24);
+  box-shadow:
+    0 14px 28px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.product-media{
+  position:relative;
+}
+
 .product-image{
   display:block;
   width:124px;
@@ -459,21 +514,21 @@ button{
   margin:0 auto;
   flex-shrink:0;
   border-radius:50%;
-  background:rgba(255,255,255,.08);
-  border:2px solid rgba(201,176,55,.26);
-  box-shadow:
-    0 14px 28px rgba(0,0,0,.24),
-    inset 0 1px 0 rgba(255,255,255,.08);
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  position:relative;
+  z-index:1;
 }
 
 .product-image.contain{
   object-fit:contain;
-  width:100%;
-  height:auto;
-  max-width:156px;
-  max-height:120px;
-  padding:0;
-  border-radius:24px;
+  width:112px;
+  height:112px;
+  max-width:112px;
+  max-height:112px;
+  padding:6px;
+  border-radius:50%;
   background:transparent;
   border:0;
   box-shadow:none;
@@ -486,7 +541,7 @@ button{
 .product-topline h4{
   margin:0;
   font-family:"Montserrat",sans-serif;
-  font-size:.98rem;
+  font-size:1rem;
   line-height:1.28;
   min-height:2.6em;
 }
@@ -554,6 +609,7 @@ button{
   padding:16px;
   border-radius:22px;
   background:rgba(5,20,40,.94);
+  border:1px solid rgba(255,255,255,.07);
 }
 
 .promo-card h4,
@@ -725,43 +781,90 @@ button{
 }
 
 @media (max-width:520px){
+  .trust-strip{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .trust-card{
+    padding:12px;
+  }
+
+  .trust-card strong{
+    font-size:.92rem;
+  }
+
   .app-shell{
-    padding:10px 10px 108px;
+    padding:8px 8px 94px;
   }
 
   .topbar{
-    padding:12px;
+    padding:10px;
     align-items:flex-start;
   }
 
   .brand-logo{
-    width:60px;
-    height:60px;
+    width:52px;
+    height:52px;
   }
 
   .brand-copy h1{
-    font-size:1.14rem;
+    font-size:1rem;
+  }
+
+  .brand-copy strong{
+    font-size:.84rem;
+  }
+
+  .brand-kicker{
+    font-size:.64rem;
   }
 
   .topbar-cta{
-    padding:10px 14px;
-    min-height:42px;
+    padding:8px 12px;
+    min-height:38px;
+    font-size:.92rem;
+  }
+
+  .section-nav{
+    top:8px;
+    gap:6px;
+    padding:8px 0 0;
+  }
+
+  .section-pill{
+    min-height:36px;
+    padding:0 12px;
+    font-size:.88rem;
   }
 
   .hero-card{
-    padding:16px;
+    padding:14px;
   }
 
   .hero-copy h2{
-    font-size:1.62rem;
+    font-size:1.36rem;
+  }
+
+  .hero-copy p{
+    font-size:.9rem;
+    line-height:1.4;
   }
 
   .hero-actions{
     display:grid;
     grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+
+  .hero-action{
+    min-height:40px;
+    padding:10px 12px;
+    font-size:.92rem;
   }
 
   .quick-actions,
+  .gas-grid{
     grid-template-columns:1fr 1fr;
   }
 
@@ -769,23 +872,128 @@ button{
     grid-column:1 / -1;
   }
 
+  .quick-card{
+    min-height:70px;
+    padding:12px;
+  }
+
+  .quick-card span{
+    font-size:.64rem;
+  }
+
+  .quick-card strong{
+    font-size:.92rem;
+  }
+
+  .tabs-panel{
+    padding:12px;
+  }
+
+  .panel-headline{
+    padding:12px 14px;
+  }
+
+  .panel-headline h3{
+    font-size:1rem;
+  }
+
+  .section-minihead h3{
+    font-size:1.12rem;
+  }
+
+  .section-note{
+    font-size:.84rem;
+    line-height:1.4;
+  }
+
   .product-media{
-    min-height:144px;
-    margin:10px 10px 0;
+    min-height:132px;
+    margin:8px 8px 0;
+    padding:12px 10px 8px;
+  }
+
+  .product-media::before{
+    width:104px;
+    height:104px;
   }
 
   .hero-bike{
-    max-width:180px;
+    max-width:156px;
   }
 
   .product-image{
-    width:110px;
-    height:110px;
+    width:94px;
+    height:94px;
   }
 
   .product-image.contain{
-    max-width:132px;
-    max-height:96px;
+    width:86px;
+    height:86px;
+    max-width:86px;
+    max-height:86px;
+  }
+
+  .product-content{
+    padding:10px 12px 12px;
+  }
+
+  .product-topline h4{
+    font-size:.88rem;
+    min-height:2.4em;
+  }
+
+  .product-tags{
+    gap:6px;
+    margin-top:8px;
+  }
+
+  .product-tags span{
+    padding:6px 8px;
+    font-size:.68rem;
+  }
+
+  .product-actions{
+    gap:8px;
+    margin:10px 0;
+    padding:6px 8px;
+  }
+
+  .qty-btn{
+    width:28px;
+    height:28px;
+  }
+
+  .order-btn{
+    min-height:40px;
+    padding:10px 12px;
+    font-size:.92rem;
+  }
+
+  .promo-card,
+  .tip-card,
+  .contact-card,
+  .story-card,
+  .video-card,
+  .location-card{
+    padding:14px;
+  }
+
+  .promo-card h4,
+  .tip-card h4,
+  .contact-card h4,
+  .story-card h4,
+  .video-card h4,
+  .location-card h4{
+    font-size:.96rem;
+  }
+
+  .promo-card p,
+  .tip-card p,
+  .contact-card p,
+  .story-card p,
+  .video-card p,
+  .location-card p{
+    font-size:.86rem;
   }
 
   .video-actions{
@@ -794,19 +1002,22 @@ button{
 
   .bottom-nav{
     grid-template-columns:repeat(4,minmax(0,1fr));
-    gap:6px;
-    padding:8px;
+    gap:5px;
+    padding:7px;
+    width:min(100% - 16px,620px);
   }
 
   .bottom-link{
-    min-height:42px;
-    font-size:.92rem;
-    padding:8px 10px;
+    min-height:38px;
+    font-size:.82rem;
+    padding:6px 8px;
   }
 
   .floating-wa{
     right:12px;
-    bottom:82px;
-    padding:11px 16px;
+    bottom:74px;
+    padding:10px 14px;
+    min-height:40px;
+    font-size:.92rem;
   }
 }
