@@ -325,6 +325,7 @@ button{
   place-items:center;
   min-height:178px;
   padding:12px;
+  border-radius:24px;
   background:linear-gradient(180deg,#0d203b,#071325);
 }
 
@@ -338,6 +339,7 @@ button{
   height:100%;
   max-height:168px;
   object-fit:contain;
+  border-radius:22px;
 }
 
 .product-image.contain{
@@ -403,14 +405,18 @@ button{
 
 .promo-grid,
 .tips-list,
-.contact-grid{
+.contact-grid,
+.story-grid{
   display:grid;
   gap:12px;
 }
 
 .promo-card,
 .tip-card,
-.contact-card{
+.contact-card,
+.story-card,
+.video-card,
+.location-card{
   padding:16px;
   border-radius:22px;
   background:rgba(5,20,40,.94);
@@ -418,7 +424,10 @@ button{
 
 .promo-card h4,
 .tip-card h4,
-.contact-card h4{
+.contact-card h4,
+.story-card h4,
+.video-card h4,
+.location-card h4{
   margin:8px 0 6px;
   font-family:"Montserrat",sans-serif;
   font-size:1.05rem;
@@ -426,7 +435,10 @@ button{
 
 .promo-card p,
 .tip-card p,
-.contact-card p{
+.contact-card p,
+.story-card p,
+.video-card p,
+.location-card p{
   margin:0;
   color:rgba(255,255,255,.82);
   line-height:1.45;
@@ -458,6 +470,92 @@ button{
 
 .contact-card.priority{
   background:linear-gradient(180deg,rgba(255,69,0,.18),rgba(255,255,255,.02)),rgba(5,20,40,.96);
+}
+
+.story-card{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)),rgba(5,20,40,.96);
+}
+
+.story-card.accent{
+  background:linear-gradient(180deg,rgba(201,176,55,.18),rgba(255,255,255,.02)),rgba(5,20,40,.96);
+}
+
+.video-card,
+.location-card{
+  display:grid;
+  gap:14px;
+}
+
+.video-frame{
+  min-height:220px;
+  border-radius:24px;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(circle at top right,rgba(255,69,0,.18),transparent 24%),
+    linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+}
+
+.video-placeholder{
+  display:grid;
+  align-content:center;
+  min-height:190px;
+  gap:10px;
+  text-align:center;
+}
+
+.video-pill{
+  display:inline-flex;
+  justify-self:center;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  color:var(--gold-soft);
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.video-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.location-card{
+  background:
+    radial-gradient(circle at top right,rgba(201,176,55,.14),transparent 24%),
+    rgba(5,20,40,.96);
+}
+
+.compact-location{
+  grid-template-columns:1fr;
+  align-items:center;
+}
+
+.location-note{
+  margin-top:10px !important;
+}
+
+.map-link{
+  display:grid;
+  gap:4px;
+  padding:16px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(135deg,var(--flame),var(--amber));
+  color:var(--white);
+}
+
+.map-link span{
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.map-link strong{
+  font-family:"Montserrat",sans-serif;
+  font-size:1.1rem;
 }
 
 .bottom-nav{
@@ -541,6 +639,10 @@ button{
 
   .product-media{
     min-height:156px;
+  }
+
+  .video-actions{
+    grid-template-columns:1fr;
   }
 
   .bottom-nav{
