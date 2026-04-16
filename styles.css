@@ -19,6 +19,7 @@ body{
   margin:0;
   font-family:"Open Sans","Segoe UI",sans-serif;
   color:var(--white);
+  overflow-x:hidden;
   background:
     radial-gradient(circle at top left,rgba(255,69,0,.14),transparent 22%),
     radial-gradient(circle at 85% 8%,rgba(201,176,55,.18),transparent 16%),
@@ -76,6 +77,7 @@ button{
   align-items:center;
   gap:12px;
   min-width:0;
+  flex:1;
 }
 
 .brand-logo{
@@ -309,6 +311,7 @@ button{
   padding:16px;
   border-radius:28px;
   background:var(--panel);
+  min-width:0;
 }
 
 .tab-chip,
@@ -410,6 +413,7 @@ button{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
+  min-width:0;
 }
 
 .catalog-block + .catalog-block{
@@ -443,6 +447,10 @@ button{
   overflow-x:auto;
   padding-bottom:4px;
   scroll-snap-type:x proximity;
+}
+
+.accessory-strip > *{
+  min-width:0;
 }
 
 .accessory-strip .product-card{
@@ -800,7 +808,8 @@ button{
 
   .topbar{
     padding:10px;
-    align-items:flex-start;
+    align-items:stretch;
+    flex-direction:column;
   }
 
   .brand-logo{
@@ -824,6 +833,7 @@ button{
     padding:8px 12px;
     min-height:38px;
     font-size:.92rem;
+    width:100%;
   }
 
   .section-nav{
@@ -865,11 +875,11 @@ button{
 
   .quick-actions,
   .gas-grid{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
   }
 
   .quick-card:last-child{
-    grid-column:1 / -1;
+    grid-column:auto;
   }
 
   .quick-card{
@@ -1009,8 +1019,8 @@ button{
 
   .bottom-link{
     min-height:38px;
-    font-size:.82rem;
-    padding:6px 8px;
+    font-size:.76rem;
+    padding:6px 4px;
   }
 
   .floating-wa{
