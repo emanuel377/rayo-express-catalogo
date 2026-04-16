@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260415h">
+  <link rel="stylesheet" href="styles.css?v=20260415j">
 </head>
 <body>
   <div class="app-shell">
@@ -23,6 +23,15 @@
       </div>
       <a class="topbar-cta" href="https://wa.me/50684442882?text=Hola%20Rayo%20Express,%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </header>
+
+    <nav class="section-nav" aria-label="Accesos rapidos del sitio">
+      <a class="section-pill active" href="#catalogo">Catalogo</a>
+      <a class="section-pill" href="#promos">Promos</a>
+      <a class="section-pill" href="#nosotros">Nosotros</a>
+      <a class="section-pill" href="#video">Video</a>
+      <a class="section-pill" href="#ubicacion">Ubicacion</a>
+      <a class="section-pill" href="#contacto">Contacto</a>
+    </nav>
 
     <main class="mobile-app">
       <section class="hero-card">
@@ -49,18 +58,16 @@
           <span>Ofertas</span>
           <strong>Promos</strong>
         </a>
-        <a class="quick-card" href="#contacto">
-          <span>Canales</span>
-          <strong>Contacto</strong>
+        <a class="quick-card" href="#ubicacion">
+          <span>Mapa</span>
+          <strong>Ubicacion</strong>
         </a>
       </section>
 
       <section class="tabs-panel">
-        <div class="tabs-header" role="tablist" aria-label="Secciones de Rayo Express">
-          <a class="tab-chip active" href="#catalogo" role="tab" aria-selected="true">Catalogo</a>
-          <a class="tab-chip" href="#promos" role="tab" aria-selected="false">Promos</a>
-          <a class="tab-chip" href="#seguridad" role="tab" aria-selected="false">Tips</a>
-          <a class="tab-chip" href="#contacto" role="tab" aria-selected="false">Contacto</a>
+        <div class="panel-headline">
+          <span>Rayo Express</span>
+          <h3>Catalogo, informacion y contacto en un solo lugar</h3>
         </div>
 
         <section class="tab-view active" id="catalogo" role="tabpanel">
@@ -69,7 +76,11 @@
             <h3>Gas y accesorios</h3>
           </div>
 
-          <div class="catalog-grid">
+          <div class="catalog-block">
+            <div class="catalog-subhead">
+              <span>Gases</span>
+            </div>
+            <div class="catalog-grid gas-grid">
             <article class="product-card" data-product="gas rosca 25 lb">
               <div class="product-media">
                 <img class="product-image" src="gas azul solo.jpeg" alt="Gas rosca 25 lb">
@@ -153,7 +164,14 @@
                 <a class="order-btn" data-whatsapp-link href="https://wa.me/50684442882?text=Hola%20Rayo%20Express,%20quiero%201%20gas%20100%20lb." target="_blank" rel="noopener noreferrer">Pedir</a>
               </div>
             </article>
+            </div>
+          </div>
 
+          <div class="catalog-block">
+            <div class="catalog-subhead">
+              <span>Accesorios</span>
+            </div>
+            <div class="accessory-strip">
             <article class="product-card compact" data-product="manguera gas alta calidad">
               <div class="product-media light">
                 <img class="product-image contain" src="manguera.jpeg" alt="Manguera alta calidad">
@@ -233,6 +251,7 @@
                 <a class="order-btn" data-whatsapp-link href="https://wa.me/50684442882?text=Hola%20Rayo%20Express,%20quiero%201%20llave%20rosca." target="_blank" rel="noopener noreferrer">Pedir</a>
               </div>
             </article>
+            </div>
           </div>
         </section>
 
@@ -367,7 +386,7 @@
     <nav class="bottom-nav" aria-label="Navegacion principal">
       <a class="bottom-link active" href="#catalogo">Catalogo</a>
       <a class="bottom-link" href="#promos">Promos</a>
-      <a class="bottom-link" href="#seguridad">Tips</a>
+      <a class="bottom-link" href="#ubicacion">Mapa</a>
       <a class="bottom-link" href="#contacto">Contacto</a>
     </nav>
 
@@ -376,6 +395,6 @@
     </a>
   </div>
 
-  <script src="script.js?v=20260415h"></script>
+  <script src="script.js?v=20260415j"></script>
 </body>
 </html>

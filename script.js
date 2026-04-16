@@ -2,7 +2,7 @@ const phoneNumber = "50684442882";
 const navLinks = document.querySelectorAll('a[href^="#"]');
 
 function setActiveNav(targetId) {
-  document.querySelectorAll(".tab-chip, .bottom-link").forEach((link) => {
+  document.querySelectorAll(".tab-chip, .bottom-link, .section-pill").forEach((link) => {
     const isActive = link.getAttribute("href") === `#${targetId}`;
     link.classList.toggle("active", isActive);
 
