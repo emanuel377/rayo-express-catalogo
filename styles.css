@@ -642,6 +642,11 @@ button{
   line-height:1.45;
 }
 
+.contact-card{
+  display:grid;
+  gap:8px;
+}
+
 .promo-badge,
 .contact-label{
   display:inline-flex;
@@ -668,6 +673,24 @@ button{
 
 .contact-card.priority{
   background:linear-gradient(180deg,rgba(255,69,0,.18),rgba(255,255,255,.02)),rgba(5,20,40,.96);
+}
+
+.contact-action{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  min-height:38px;
+  margin-top:4px;
+  padding:8px 16px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(135deg,var(--flame),var(--amber));
+  color:var(--white);
+  font-family:"Bebas Neue",sans-serif;
+  font-size:.96rem;
+  letter-spacing:.04em;
+  box-shadow:0 10px 22px rgba(0,0,0,.2);
 }
 
 .story-card{
@@ -1003,6 +1026,12 @@ button{
   .story-card p,
   .video-card p,
   .location-card p{
+    font-size:.86rem;
+  }
+
+  .contact-action{
+    min-height:34px;
+    padding:7px 14px;
     font-size:.86rem;
   }
 
