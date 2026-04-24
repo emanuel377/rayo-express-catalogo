@@ -384,6 +384,7 @@ button{
 #catalogo,
 #express,
 #promos,
+#alianzas,
 #nosotros,
 #video,
 #seguridad,
@@ -619,7 +620,8 @@ button{
 .story-card,
 .video-card,
 .location-card,
-.express-card{
+.express-card,
+.alliances-card{
   padding:16px;
   border-radius:22px;
   background:rgba(5,20,40,.94);
@@ -632,7 +634,8 @@ button{
 .story-card h4,
 .video-card h4,
 .location-card h4,
-.express-card h4{
+.express-card h4,
+.alliances-card h4{
   margin:8px 0 6px;
   font-family:"Montserrat",sans-serif;
   font-size:1.05rem;
@@ -644,7 +647,8 @@ button{
 .story-card p,
 .video-card p,
 .location-card p,
-.express-card p{
+.express-card p,
+.alliances-card p{
   margin:0;
   color:rgba(255,255,255,.82);
   line-height:1.45;
@@ -711,7 +715,8 @@ button{
 
 .video-card,
 .location-card,
-.express-card{
+.express-card,
+.alliances-card{
   display:grid;
   gap:14px;
 }
@@ -721,6 +726,54 @@ button{
     radial-gradient(circle at top right,rgba(255,69,0,.16),transparent 24%),
     linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)),
     rgba(5,20,40,.96);
+}
+
+.alliances-card{
+  background:
+    radial-gradient(circle at top right,rgba(201,176,55,.16),transparent 24%),
+    linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)),
+    rgba(5,20,40,.96);
+}
+
+.alliances-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+
+.alliance-item{
+  display:grid;
+  justify-items:center;
+  gap:8px;
+  padding:16px 12px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04);
+  text-align:center;
+}
+
+.alliance-logo{
+  display:grid;
+  place-items:center;
+  width:74px;
+  height:74px;
+  border-radius:50%;
+  background:#ffffff;
+  color:#0f172a;
+  border:2px solid rgba(201,176,55,.26);
+  font-family:"Bebas Neue",sans-serif;
+  font-size:1rem;
+  letter-spacing:.04em;
+}
+
+.alliance-item strong{
+  font-family:"Montserrat",sans-serif;
+  font-size:.95rem;
+}
+
+.alliance-item small{
+  color:rgba(255,255,255,.72);
+  font-size:.76rem;
 }
 
 .express-tags{
@@ -1062,7 +1115,8 @@ button{
   .story-card,
   .video-card,
   .location-card,
-  .express-card{
+  .express-card,
+  .alliances-card{
     padding:14px;
   }
 
@@ -1072,7 +1126,8 @@ button{
   .story-card h4,
   .video-card h4,
   .location-card h4,
-  .express-card h4{
+  .express-card h4,
+  .alliances-card h4{
     font-size:.96rem;
   }
 
@@ -1082,12 +1137,17 @@ button{
   .story-card p,
   .video-card p,
   .location-card p,
-  .express-card p{
+  .express-card p,
+  .alliances-card p{
     font-size:.86rem;
   }
 
   .express-btn{
     padding:14px;
+  }
+
+  .alliances-grid{
+    grid-template-columns:1fr;
   }
 
   .contact-action{
