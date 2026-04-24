@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260423d">
+  <link rel="stylesheet" href="styles.css?v=20260424a">
 </head>
 <body>
   <div class="app-shell">
@@ -26,6 +26,7 @@
 
     <nav class="section-nav" aria-label="Accesos rapidos del sitio">
       <a class="section-pill active" href="#catalogo">Catalogo</a>
+      <a class="section-pill" href="#express">Express</a>
       <a class="section-pill" href="#promos">Promos</a>
       <a class="section-pill" href="#nosotros">Nosotros</a>
       <a class="section-pill" href="#video">Video</a>
@@ -68,6 +69,10 @@
         <a class="quick-card highlight" href="#catalogo">
           <span>Principal</span>
           <strong>Catalogo</strong>
+        </a>
+        <a class="quick-card express" href="#express">
+          <span>Pedido</span>
+          <strong>Servicio Express</strong>
         </a>
         <a class="quick-card" href="#promos">
           <span>Ofertas</span>
@@ -270,6 +275,30 @@
           </div>
         </section>
 
+        <section class="tab-view active" id="express" role="tabpanel">
+          <div class="section-minihead compact">
+            <span>Servicio Express</span>
+            <h3>Mandados y entregas a domicilio</h3>
+          </div>
+          <div class="express-card">
+            <div class="express-copy">
+              <span class="contact-label">Nuevo servicio</span>
+              <h4>Tambien hacemos servicio express a domicilio</h4>
+              <p>Consulta por mandados, comida rapida, farmacia, repuestos y otras entregas segun disponibilidad.</p>
+              <div class="express-tags">
+                <span>Restaurantes</span>
+                <span>Farmacia</span>
+                <span>Repuestos</span>
+                <span>Mandados</span>
+              </div>
+            </div>
+            <a class="express-btn" href="https://wa.me/50684442882?text=Hola%20Rayo%20Express,%20quiero%20consultar%20por%20el%20servicio%20express%20a%20domicilio." target="_blank" rel="noopener noreferrer">
+              <span>Solicitar</span>
+              <strong>Servicio Express</strong>
+            </a>
+          </div>
+        </section>
+
         <section class="tab-view active" id="promos" role="tabpanel">
           <div class="section-minihead compact">
             <span>Promociones</span>
@@ -403,7 +432,7 @@
 
     <nav class="bottom-nav" aria-label="Navegacion principal">
       <a class="bottom-link active" href="#catalogo">Catalogo</a>
-      <a class="bottom-link" href="#promos">Promos</a>
+      <a class="bottom-link" href="#express">Express</a>
       <a class="bottom-link" href="#ubicacion">Mapa</a>
       <a class="bottom-link" href="#contacto">Contacto</a>
     </nav>
@@ -413,6 +442,6 @@
     </a>
   </div>
 
-  <script src="script.js?v=20260423d"></script>
+  <script src="script.js?v=20260424a"></script>
 </body>
 </html>

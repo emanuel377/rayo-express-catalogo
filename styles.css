@@ -307,6 +307,10 @@ button{
   color:#ffe7c0;
 }
 
+.quick-card.express{
+  background:linear-gradient(135deg,rgba(255,176,36,.18),rgba(255,69,0,.12)),rgba(4,17,35,.92);
+}
+
 .tabs-panel{
   padding:16px;
   border-radius:28px;
@@ -378,6 +382,7 @@ button{
 }
 
 #catalogo,
+#express,
 #promos,
 #nosotros,
 #video,
@@ -613,7 +618,8 @@ button{
 .contact-card,
 .story-card,
 .video-card,
-.location-card{
+.location-card,
+.express-card{
   padding:16px;
   border-radius:22px;
   background:rgba(5,20,40,.94);
@@ -625,7 +631,8 @@ button{
 .contact-card h4,
 .story-card h4,
 .video-card h4,
-.location-card h4{
+.location-card h4,
+.express-card h4{
   margin:8px 0 6px;
   font-family:"Montserrat",sans-serif;
   font-size:1.05rem;
@@ -636,7 +643,8 @@ button{
 .contact-card p,
 .story-card p,
 .video-card p,
-.location-card p{
+.location-card p,
+.express-card p{
   margin:0;
   color:rgba(255,255,255,.82);
   line-height:1.45;
@@ -702,9 +710,55 @@ button{
 }
 
 .video-card,
-.location-card{
+.location-card,
+.express-card{
   display:grid;
   gap:14px;
+}
+
+.express-card{
+  background:
+    radial-gradient(circle at top right,rgba(255,69,0,.16),transparent 24%),
+    linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)),
+    rgba(5,20,40,.96);
+}
+
+.express-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+
+.express-tags span{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  color:var(--gold-soft);
+  font-size:.74rem;
+}
+
+.express-btn{
+  display:grid;
+  gap:4px;
+  padding:16px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(135deg,var(--flame),var(--amber));
+  color:var(--white);
+}
+
+.express-btn span{
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.express-btn strong{
+  font-family:"Montserrat",sans-serif;
+  font-size:1.08rem;
 }
 
 .video-frame{
@@ -1007,7 +1061,8 @@ button{
   .contact-card,
   .story-card,
   .video-card,
-  .location-card{
+  .location-card,
+  .express-card{
     padding:14px;
   }
 
@@ -1016,7 +1071,8 @@ button{
   .contact-card h4,
   .story-card h4,
   .video-card h4,
-  .location-card h4{
+  .location-card h4,
+  .express-card h4{
     font-size:.96rem;
   }
 
@@ -1025,8 +1081,13 @@ button{
   .contact-card p,
   .story-card p,
   .video-card p,
-  .location-card p{
+  .location-card p,
+  .express-card p{
     font-size:.86rem;
+  }
+
+  .express-btn{
+    padding:14px;
   }
 
   .contact-action{
