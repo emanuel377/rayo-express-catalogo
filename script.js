@@ -30,10 +30,16 @@ document.querySelectorAll(".product-card").forEach((card) => {
   const qtyDisplay = card.querySelector("[data-qty]");
   const whatsappLink = card.querySelector("[data-whatsapp-link]");
   const productName = card.dataset.product;
+  const customMessage = card.dataset.message;
 
   const updateLink = () => {
     const quantity = Number(qtyDisplay.textContent);
-    const message = `Hola Rayo Express, quiero ${quantity} ${productName}. Me pueden dar mas informacion?`;
+    const message =
+      customMessage && quantity === 1
+        ? customMessage
+        : customMessage && quantity > 1
+          ? `${customMessage} Cantidad: ${quantity}.`
+          : `Hola Rayo Express, quiero ${quantity} ${productName}. Me pueden dar mas informacion?`;
     whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   };
 
