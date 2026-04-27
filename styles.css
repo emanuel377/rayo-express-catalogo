@@ -798,15 +798,15 @@ button{
 }
 
 .scale-guiana{
-  transform:scale(1.06);
+  transform:scale(1.01);
 }
 
 .scale-tucan{
-  transform:scale(1.08);
+  transform:scale(1.12);
 }
 
 .scale-monchis{
-  transform:scale(1.72);
+  transform:scale(1.08);
 }
 
 .alliance-monchis .alliance-logo{
@@ -814,7 +814,7 @@ button{
 }
 
 .alliance-monchis .alliance-logo-image{
-  background:#2a1d18;
+  background:#ffffff;
 }
 
 .alliance-item strong{
