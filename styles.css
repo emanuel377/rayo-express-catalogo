@@ -798,15 +798,18 @@ button{
 }
 
 .scale-guiana{
-  transform:scale(1.08);
+  transform:scale(1.12);
+  object-position:center center;
 }
 
 .scale-tucan{
-  transform:scale(1.16);
+  transform:scale(1.26);
+  object-position:center 55%;
 }
 
 .scale-monchis{
-  transform:scale(1.16);
+  transform:scale(1.22);
+  object-position:center center;
 }
 
 .alliance-monchis .alliance-logo{
