@@ -696,9 +696,9 @@ button{
 }
 
 .promo-spotlight.combo .promo-visual{
-  min-height:352px;
+  min-height:404px;
   display:grid;
-  align-items:center;
+  align-items:start;
   grid-template-columns:1fr;
   justify-items:center;
   background:transparent;
@@ -744,7 +744,7 @@ button{
 .promo-overlay-clean{
   position:absolute;
   left:50%;
-  bottom:20px;
+  bottom:12px;
   transform:translateX(-50%);
   width:max-content;
   min-height:auto;
@@ -1407,7 +1407,7 @@ button{
   }
 
   .promo-spotlight.combo .promo-visual{
-    min-height:298px;
+    min-height:344px;
   }
 
   .promo-spotlight.combo .promo-overlay{
