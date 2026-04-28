@@ -743,6 +743,8 @@ button{
 
 .promo-overlay-clean{
   position:absolute;
+  z-index:2;
+  display:grid;
   left:50%;
   bottom:12px;
   transform:translateX(-50%);
