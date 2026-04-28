@@ -714,13 +714,28 @@ button{
   min-height:auto;
   object-fit:contain;
   object-position:center center;
-  border-radius:20px;
-  background:transparent;
+  border-radius:28px;
+  background:linear-gradient(180deg,#f6f8fc,#ffffff);
   padding:0;
-  border:0;
-  box-shadow:none;
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:
+    0 18px 34px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.82);
   opacity:1;
   transform:none;
+}
+
+.promo-spotlight.combo .promo-visual::after{
+  content:"";
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:18px;
+  height:22px;
+  border-radius:999px;
+  background:radial-gradient(circle,rgba(255,255,255,.14),transparent 72%);
+  filter:blur(8px);
+  pointer-events:none;
 }
 
 .promo-spotlight.combo .promo-overlay{
@@ -1393,6 +1408,7 @@ button{
     inset:8px 8px auto 8px;
     width:calc(100% - 16px);
     height:calc(100% - 16px);
+    border-radius:24px;
   }
 
   .promo-spotlight.combo .promo-overlay{
