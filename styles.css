@@ -703,10 +703,17 @@ button{
 .promo-spotlight.combo .promo-visual > img{
   position:relative;
   inset:auto;
-  width:100%;
-  height:100%;
-  min-height:198px;
+  width:142px;
+  height:142px;
+  min-height:auto;
+  justify-self:center;
+  align-self:center;
   order:2;
+  border-radius:50%;
+  background:#ffffff;
+  padding:10px;
+  border:2px solid rgba(201,176,55,.28);
+  box-shadow:0 14px 28px rgba(0,0,0,.16);
 }
 
 .promo-spotlight.combo .promo-overlay{
@@ -1361,7 +1368,8 @@ button{
   }
 
   .promo-spotlight.combo .promo-visual > img{
-    min-height:128px;
+    width:116px;
+    height:116px;
     order:1;
   }
 
