@@ -701,7 +701,8 @@ button{
   display:grid;
   gap:8px;
   padding:18px;
-  background:linear-gradient(180deg,transparent 0%,rgba(2,6,15,.18) 20%,rgba(2,6,15,.88) 100%);
+  align-content:end;
+  background:linear-gradient(180deg,transparent 0%,rgba(2,6,15,.12) 34%,rgba(2,6,15,.82) 100%);
 }
 
 .promo-chip{
@@ -709,11 +710,12 @@ button{
   width:max-content;
   padding:7px 10px;
   border-radius:999px;
-  background:rgba(255,255,255,.10);
+  background:rgba(2,6,15,.54);
   color:var(--gold-soft);
   font-size:.74rem;
   text-transform:uppercase;
   letter-spacing:.12em;
+  border:1px solid rgba(255,255,255,.10);
 }
 
 .promo-overlay strong{
@@ -1339,6 +1341,19 @@ button{
     justify-items:center;
   }
 
+  .promo-visual{
+    align-items:stretch;
+  }
+
+  .promo-overlay{
+    min-height:100%;
+  }
+
+  .promo-chip{
+    align-self:start;
+    margin-bottom:auto;
+  }
+
   .promo-overlay strong{
     font-size:1rem;
   }
@@ -1368,7 +1383,8 @@ button{
     right:14px;
     bottom:14px;
     border-radius:22px;
-    background:linear-gradient(180deg,rgba(2,6,15,.2),rgba(2,6,15,.94));
+    min-height:auto;
+    background:linear-gradient(180deg,rgba(2,6,15,.08),rgba(2,6,15,.90));
   }
 
   .promo-chip,
