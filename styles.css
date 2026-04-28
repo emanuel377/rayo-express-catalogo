@@ -696,31 +696,37 @@ button{
 }
 
 .promo-spotlight.combo .promo-visual{
-  grid-template-columns:minmax(0,1.05fr) minmax(118px,.95fr);
-  align-items:stretch;
+  min-height:228px;
+  display:grid;
+  align-items:end;
+  grid-template-columns:1fr;
+  background:
+    radial-gradient(circle at top right,rgba(255,176,36,.14),transparent 24%),
+    linear-gradient(180deg,#102443,#071325);
 }
 
 .promo-spotlight.combo .promo-visual > img{
-  position:relative;
-  inset:auto;
-  width:142px;
-  height:142px;
-  min-height:auto;
-  justify-self:center;
-  align-self:center;
-  order:2;
-  border-radius:50%;
-  background:#ffffff;
-  padding:10px;
-  border:2px solid rgba(201,176,55,.28);
-  box-shadow:0 14px 28px rgba(0,0,0,.16);
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  min-height:100%;
+  object-fit:cover;
+  object-position:center center;
+  border-radius:0;
+  background:transparent;
+  padding:0;
+  border:0;
+  box-shadow:none;
+  opacity:.94;
+  transform:none;
 }
 
 .promo-spotlight.combo .promo-overlay{
-  min-height:100%;
-  order:1;
+  min-height:auto;
   justify-items:start;
   text-align:left;
+  background:linear-gradient(180deg,rgba(2,6,15,.04) 0%,rgba(2,6,15,.18) 26%,rgba(2,6,15,.92) 100%);
 }
 
 .promo-overlay{
@@ -1359,22 +1365,12 @@ button{
   }
 
   .promo-spotlight.combo .promo-visual > img{
-    padding:14px;
-    transform:scale(.98);
-  }
-
-  .promo-spotlight.combo .promo-visual{
-    grid-template-columns:1fr;
-  }
-
-  .promo-spotlight.combo .promo-visual > img{
-    width:116px;
-    height:116px;
-    order:1;
+    width:100%;
+    height:100%;
+    min-height:100%;
   }
 
   .promo-spotlight.combo .promo-overlay{
-    order:2;
     justify-items:center;
     text-align:center;
   }
