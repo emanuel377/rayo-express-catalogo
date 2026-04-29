@@ -741,6 +741,10 @@ button{
   display:none;
 }
 
+.promo-spotlight.combo .promo-overlay-clean{
+  display:grid;
+}
+
 .promo-overlay-clean{
   position:absolute;
   z-index:2;
