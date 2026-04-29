@@ -751,6 +751,7 @@ button{
   display:grid;
   left:50%;
   bottom:18px;
+  right:auto;
   transform:translateX(-50%);
   width:max-content;
   min-height:auto;
@@ -762,6 +763,8 @@ button{
   border:0;
   gap:0;
   align-content:initial;
+  justify-self:center;
+  margin:0 auto;
 }
 
 .promo-visual .promo-overlay-clean{
