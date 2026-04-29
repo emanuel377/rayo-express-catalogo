@@ -753,7 +753,7 @@ button{
   align-items:center;
   left:0;
   right:0;
-  bottom:18px;
+  bottom:28px;
   transform:none;
   width:100%;
   min-height:auto;
@@ -1432,10 +1432,6 @@ button{
   .promo-spotlight.combo .promo-overlay{
     justify-items:center;
     text-align:center;
-  }
-
-  .promo-overlay-clean{
-    bottom:8px;
   }
 
   .promo-overlay{
