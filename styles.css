@@ -750,7 +750,7 @@ button{
   z-index:2;
   display:grid;
   left:50%;
-  bottom:12px;
+  bottom:10px;
   transform:translateX(-50%);
   width:max-content;
   min-height:auto;
@@ -758,16 +758,17 @@ button{
   justify-items:center;
   text-align:center;
   background:transparent;
+  box-shadow:none;
+  border:0;
 }
 
 .promo-overlay-clean .promo-cta{
-  min-height:38px;
-  padding:10px 20px;
-  font-size:1rem;
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:
-    0 14px 24px rgba(0,0,0,.22),
-    0 0 0 6px rgba(2,6,15,.16);
+  min-height:34px;
+  padding:8px 16px;
+  font-size:.9rem;
+  letter-spacing:.05em;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 10px 20px rgba(0,0,0,.18);
 }
 
 .promo-overlay{
@@ -1422,7 +1423,7 @@ button{
   }
 
   .promo-overlay-clean{
-    bottom:10px;
+    bottom:8px;
   }
 
   .promo-overlay{
