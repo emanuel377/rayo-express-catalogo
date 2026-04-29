@@ -757,9 +757,18 @@ button{
   padding:0;
   justify-items:center;
   text-align:center;
-  background:transparent;
+  background:none;
   box-shadow:none;
   border:0;
+  gap:0;
+  align-content:initial;
+}
+
+.promo-visual .promo-overlay-clean{
+  background:none !important;
+  padding:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
 }
 
 .promo-overlay-clean .promo-cta{
