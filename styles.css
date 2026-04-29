@@ -748,22 +748,22 @@ button{
 .promo-overlay-clean{
   position:absolute;
   z-index:2;
-  display:grid;
-  left:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  left:0;
+  right:0;
   bottom:18px;
-  right:auto;
-  transform:translateX(-50%);
-  width:max-content;
+  transform:none;
+  width:100%;
   min-height:auto;
   padding:0;
-  justify-items:center;
   text-align:center;
   background:none;
   box-shadow:none;
   border:0;
   gap:0;
   align-content:initial;
-  justify-self:center;
   margin:0 auto;
 }
 
