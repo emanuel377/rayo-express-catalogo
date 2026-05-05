@@ -791,6 +791,15 @@ button{
     rgba(5,20,40,.94);
 }
 
+.promo-spotlight.alliance .promo-spotlight-head{
+  justify-content:center;
+  text-align:center;
+}
+
+.promo-spotlight.alliance .promo-spotlight-head strong{
+  text-align:center;
+}
+
 .promo-visual-rect{
   min-height:260px;
   padding:16px;
