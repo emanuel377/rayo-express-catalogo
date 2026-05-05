@@ -687,17 +687,19 @@ button{
 }
 
 .promo-spotlight.combo .promo-spotlight-head{
-  display:grid;
-  justify-items:center;
-  align-content:center;
-  text-align:center;
+  display:grid !important;
+  justify-items:center !important;
+  justify-content:center !important;
+  align-content:center !important;
+  text-align:center !important;
   gap:10px;
   width:100%;
+  margin:0 auto;
 }
 
 .promo-spotlight.combo .promo-spotlight-head strong{
   display:block;
-  text-align:center;
+  text-align:center !important;
   width:100%;
   max-width:320px;
   margin:0 auto;
@@ -796,12 +798,14 @@ button{
 }
 
 .promo-spotlight.combo .promo-spotlight-footer{
-  display:grid;
-  justify-items:center;
-  align-content:center;
-  text-align:center;
+  display:grid !important;
+  justify-items:center !important;
+  justify-content:center !important;
+  align-content:center !important;
+  text-align:center !important;
   gap:10px;
   width:100%;
+  margin:0 auto;
 }
 
 .promo-spotlight-footer small{
@@ -812,7 +816,7 @@ button{
 
 .promo-spotlight.combo .promo-spotlight-footer small{
   display:block;
-  text-align:center;
+  text-align:center !important;
   width:100%;
   max-width:320px;
   margin:0 auto;
@@ -820,8 +824,12 @@ button{
 
 .promo-spotlight.combo .promo-chip,
 .promo-spotlight.combo .promo-cta{
-  justify-self:center;
+  justify-self:center !important;
   margin-inline:auto;
+}
+
+.promo-spotlight.combo{
+  justify-items:center;
 }
 
 .promo-spotlight.alliance{
