@@ -687,12 +687,18 @@ button{
 }
 
 .promo-spotlight.combo .promo-spotlight-head{
-  justify-content:center;
+  display:grid;
+  justify-items:center;
+  align-content:center;
   text-align:center;
+  gap:10px;
 }
 
 .promo-spotlight.combo .promo-spotlight-head strong{
   text-align:center;
+  width:100%;
+  max-width:320px;
+  margin:0 auto;
 }
 
 .promo-visual{
@@ -787,10 +793,24 @@ button{
   gap:12px;
 }
 
+.promo-spotlight.combo .promo-spotlight-footer{
+  display:grid;
+  justify-items:center;
+  align-content:center;
+  text-align:center;
+  gap:10px;
+}
+
 .promo-spotlight-footer small{
   color:rgba(255,255,255,.76);
   font-size:.85rem;
   line-height:1.4;
+}
+
+.promo-spotlight.combo .promo-spotlight-footer small{
+  text-align:center;
+  max-width:320px;
+  margin:0 auto;
 }
 
 .promo-spotlight.alliance{
