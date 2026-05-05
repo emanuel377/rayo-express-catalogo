@@ -692,9 +692,11 @@ button{
   align-content:center;
   text-align:center;
   gap:10px;
+  width:100%;
 }
 
 .promo-spotlight.combo .promo-spotlight-head strong{
+  display:block;
   text-align:center;
   width:100%;
   max-width:320px;
@@ -799,6 +801,7 @@ button{
   align-content:center;
   text-align:center;
   gap:10px;
+  width:100%;
 }
 
 .promo-spotlight-footer small{
@@ -808,9 +811,17 @@ button{
 }
 
 .promo-spotlight.combo .promo-spotlight-footer small{
+  display:block;
   text-align:center;
+  width:100%;
   max-width:320px;
   margin:0 auto;
+}
+
+.promo-spotlight.combo .promo-chip,
+.promo-spotlight.combo .promo-cta{
+  justify-self:center;
+  margin-inline:auto;
 }
 
 .promo-spotlight.alliance{
