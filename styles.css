@@ -686,6 +686,15 @@ button{
   text-align:right;
 }
 
+.promo-spotlight.combo .promo-spotlight-head{
+  justify-content:center;
+  text-align:center;
+}
+
+.promo-spotlight.combo .promo-spotlight-head strong{
+  text-align:center;
+}
+
 .promo-visual{
   position:relative;
   min-height:222px;
