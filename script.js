@@ -60,3 +60,36 @@ document.querySelectorAll(".product-card").forEach((card) => {
 });
 
 setActiveNav("catalogo");
+
+
+// Comentarios locales para la pagina de ofertas
+const commentForm = document.getElementById("commentForm");
+const reviewsList = document.getElementById("reviewsList");
+const storageKey = "rayoExpressReviews";
+function renderSavedReviews(){
+  if(!reviewsList) return;
+  const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+  saved.forEach((review)=>{
+    const card=document.createElement("article");
+    card.className="review-card";
+    card.innerHTML=`<span class="stars">★★★★★</span><p>${review.text}</p><strong>${review.name}</strong>`;
+    reviewsList.prepend(card);
+  });
+}
+if(commentForm && reviewsList){
+  renderSavedReviews();
+  commentForm.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    const name=document.getElementById("reviewName").value.trim();
+    const text=document.getElementById("reviewText").value.trim();
+    if(!name || !text) return;
+    const saved=JSON.parse(localStorage.getItem(storageKey) || "[]");
+    saved.push({name,text});
+    localStorage.setItem(storageKey,JSON.stringify(saved));
+    const card=document.createElement("article");
+    card.className="review-card";
+    card.innerHTML=`<span class="stars">★★★★★</span><p>${text}</p><strong>${name}</strong>`;
+    reviewsList.prepend(card);
+    commentForm.reset();
+  });
+}
