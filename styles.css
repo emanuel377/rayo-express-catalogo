@@ -1615,3 +1615,40 @@ button{
 
 /* === Fase profesional: paginas separadas, sorteo y comentarios === */
 .site-shell{padding-bottom:112px}.brand-wrap{color:inherit}.page-nav{position:sticky;top:8px;z-index:30;margin:12px 0 16px;background:rgba(3,13,28,.72);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:20px;padding:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;overflow:visible}.page-nav .section-pill{justify-content:center;text-align:center;white-space:nowrap;min-height:42px}.page-nav .section-pill.active{background:linear-gradient(135deg,var(--gold),var(--amber));color:#071325;box-shadow:0 12px 26px rgba(255,176,36,.25)}.page-hero{margin-top:8px}.page-panel{margin-top:18px}.page-quick-actions{grid-template-columns:repeat(2,1fr)}.raffle-card{position:relative;display:flex;gap:18px;align-items:center;padding:22px;border-radius:28px;background:linear-gradient(135deg,rgba(255,69,0,.26),rgba(201,176,55,.18)),rgba(5,20,40,.94);border:1px solid rgba(240,216,137,.35);box-shadow:0 20px 48px rgba(0,0,0,.34);overflow:hidden;margin:18px 0}.raffle-card:before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 34%);animation:shineSweep 4s linear infinite}.raffle-copy{position:relative;z-index:1}.gift-badge{position:relative;z-index:2;width:76px;height:76px;display:grid;place-items:center;flex:0 0 76px;border-radius:24px;background:linear-gradient(135deg,var(--gold),var(--amber));font-size:2.6rem;box-shadow:0 0 0 8px rgba(255,176,36,.12),0 0 34px rgba(255,176,36,.65);animation:giftPulse 1.2s ease-in-out infinite}.gift-badge.big{width:150px;height:150px;border-radius:42px;font-size:5rem;margin:auto}.raffle-card h3,.testimonials h3{margin:.35rem 0 .5rem;font-family:"Montserrat",sans-serif;font-size:1.45rem}.raffle-card p{margin:0 0 16px;color:var(--mist);line-height:1.55}.raffle-actions{display:flex;gap:10px;flex-wrap:wrap}.gift-hero{display:grid;place-items:center;min-height:180px}.testimonials{margin-top:24px}.review-highlight,.review-card,.comment-form,.express-benefits article{border:1px solid var(--line);background:rgba(3,13,28,.72);border-radius:24px;box-shadow:var(--shadow)}.review-highlight{padding:22px;margin-bottom:14px;background:linear-gradient(135deg,rgba(201,176,55,.14),rgba(255,69,0,.09)),rgba(3,13,28,.76)}.stars{color:var(--gold-soft);letter-spacing:.08em;font-size:1.1rem}.review-highlight h4,.review-card h4,.comment-form h4{margin:.35rem 0}.review-highlight p,.review-card p,.comment-form small,.express-benefits p{color:var(--mist);line-height:1.5}.reviews-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.review-card{padding:16px}.review-card strong,.review-highlight strong{color:var(--gold-soft)}.comment-form{margin-top:14px;padding:18px;display:grid;gap:12px}.comment-form label{display:grid;gap:6px;font-weight:700;color:var(--gold-soft)}.comment-form input,.comment-form textarea{width:100%;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px 14px;background:rgba(255,255,255,.07);color:var(--white);font:inherit;outline:none}.comment-form textarea{min-height:110px;resize:vertical}.comment-form input:focus,.comment-form textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,176,55,.14)}.express-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.express-benefits article{padding:16px}.express-benefits strong{display:grid;place-items:center;width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--gold),var(--amber));color:#071325}.express-benefits h4{margin:10px 0 4px}@keyframes giftPulse{0%,100%{transform:scale(1) rotate(-3deg);filter:brightness(1)}50%{transform:scale(1.08) rotate(4deg);filter:brightness(1.2)}}@keyframes shineSweep{0%{transform:translateX(-20%) rotate(0deg)}100%{transform:translateX(20%) rotate(360deg)}}@media (max-width:520px){.page-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;padding:6px}.page-nav .section-pill{font-size:.72rem;padding:8px 4px;min-height:38px}.topbar{gap:8px}.brand-logo{width:56px;height:56px}.topbar-cta{min-width:auto;padding:0 12px}.raffle-card{align-items:flex-start;flex-direction:column}.gift-badge{width:70px;height:70px;flex-basis:70px}.reviews-list,.express-benefits{grid-template-columns:1fr}.gift-badge.big{width:118px;height:118px;font-size:4rem}.hero-actions{gap:8px}.hero-action{width:100%}}
+
+
+/* Ajustes solicitados: menú móvil más grande, regalito clickeable y corrección visual */
+.gift-link{
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+}
+
+.gift-link:hover,
+.gift-link:focus-visible{
+  transform:scale(1.1) rotate(4deg);
+  outline:none;
+}
+
+@media (max-width:520px){
+  .page-nav{
+    gap:8px !important;
+    padding:8px !important;
+    border-radius:24px !important;
+  }
+
+  .page-nav .section-pill{
+    min-height:50px !important;
+    padding:0 8px !important;
+    font-size:.92rem !important;
+    letter-spacing:.045em !important;
+    border-radius:18px !important;
+  }
+}
+
+@media (max-width:380px){
+  .page-nav .section-pill{
+    min-height:48px !important;
+    font-size:.84rem !important;
+  }
+}
