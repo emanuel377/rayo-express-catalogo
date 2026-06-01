@@ -760,6 +760,27 @@ button{
   pointer-events:none;
 }
 
+.promo-spotlight.promo-junio .promo-visual{
+  min-height:auto;
+  padding:10px;
+}
+
+.promo-spotlight.promo-junio .promo-visual > img{
+  width:100%;
+  height:auto;
+  max-height:none;
+  aspect-ratio:auto;
+  object-fit:contain;
+  border-radius:22px;
+  background:none;
+  border:0;
+  box-shadow:0 16px 32px rgba(0,0,0,.20);
+}
+
+.promo-spotlight.promo-junio .promo-visual::after{
+  display:none;
+}
+
 .promo-chip{
   display:inline-flex;
   width:max-content;
@@ -1439,6 +1460,14 @@ button{
 
   .promo-spotlight.combo .promo-visual{
     min-height:318px;
+  }
+
+  .promo-spotlight.promo-junio .promo-visual{
+    min-height:auto;
+  }
+
+  .promo-spotlight.promo-junio .promo-visual > img{
+    width:100%;
   }
 
   .promo-intro{
