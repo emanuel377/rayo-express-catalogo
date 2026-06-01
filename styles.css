@@ -761,24 +761,37 @@ button{
 }
 
 .promo-spotlight.promo-junio .promo-visual{
-  min-height:auto;
-  padding:10px;
+  min-height:360px;
+  padding:18px 18px 10px;
 }
 
 .promo-spotlight.promo-junio .promo-visual > img{
-  width:100%;
+  width:min(72%,250px);
   height:auto;
-  max-height:none;
-  aspect-ratio:auto;
+  aspect-ratio:1 / 1;
   object-fit:contain;
-  border-radius:22px;
-  background:none;
+  border-radius:0;
+  background:transparent;
   border:0;
-  box-shadow:0 16px 32px rgba(0,0,0,.20);
+  box-shadow:none;
+  z-index:1;
+}
+
+.promo-spotlight.promo-junio .promo-visual::before{
+  content:"";
+  position:absolute;
+  width:min(100%,320px);
+  aspect-ratio:1 / 1;
+  border-radius:50%;
+  background:linear-gradient(180deg,#fbfcfe,#ffffff);
+  border:2px solid rgba(255,255,255,.90);
+  box-shadow:
+    0 20px 38px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.92);
 }
 
 .promo-spotlight.promo-junio .promo-visual::after{
-  display:none;
+  display:block;
 }
 
 .promo-chip{
@@ -1463,11 +1476,15 @@ button{
   }
 
   .promo-spotlight.promo-junio .promo-visual{
-    min-height:auto;
+    min-height:318px;
   }
 
   .promo-spotlight.promo-junio .promo-visual > img{
-    width:100%;
+    width:min(72%,196px);
+  }
+
+  .promo-spotlight.promo-junio .promo-visual::before{
+    width:min(100%,246px);
   }
 
   .promo-intro{
