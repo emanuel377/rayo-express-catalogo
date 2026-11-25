@@ -1,4 +1,4 @@
-const phoneNumber = "50684442882";
+const catalogPhoneNumber = "50671902845";
 const navLinks = document.querySelectorAll('a[href^="#"]');
 
 function setActiveNav(targetId) {
@@ -41,8 +41,8 @@ document.querySelectorAll(".product-card").forEach((card) => {
         ? customMessage
         : customMessage && quantity > 1
           ? `${customMessage} Cantidad: ${quantity}.`
-          : `Hola Rayo Express, quiero ${quantity} ${productName}. Me pueden dar mas informacion?`;
-    whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+          : `Hola Rayo Gas, quiero ${quantity} ${productName}. Me pueden dar mas informacion?`;
+    whatsappLink.href = `https://wa.me/${catalogPhoneNumber}?text=${encodeURIComponent(message)}`;
   };
 
   card.querySelectorAll(".qty-btn").forEach((button) => {
