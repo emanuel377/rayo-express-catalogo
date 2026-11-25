@@ -3,6 +3,8 @@ const navLinks = document.querySelectorAll('a[href^="#"]');
 
 function setActiveNav(targetId) {
   document.querySelectorAll(".tab-chip, .bottom-link, .section-pill").forEach((link) => {
+    // Preserve the current page when scrolling to a section within it.
+    if (!link.getAttribute("href")?.startsWith("#")) return;
     const isActive = link.getAttribute("href") === `#${targetId}`;
     link.classList.toggle("active", isActive);
 
